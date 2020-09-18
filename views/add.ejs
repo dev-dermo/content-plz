@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title><%= title %> | Content Plz!</title>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-primary text-center"><%= title %></h1>
+					<div class="btn-group">
+						<a class="btn btn-default" href="./">Content Overview</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="alert alert-success" role="alert">
+						<ul>
+							
+						</ul>
+
+						<hr>
+						<!--<div class="alert alert-warning" role="alert">When you are finished adding pages, don't forget to click 'Finished'.</div>-->
+						<p><strong>When you are finished adding pages, don't forget to click 'Finished'.</strong></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="">
+				<div class="">
+					<div class="alert alert-danger" role="alert">A Page Name is required.</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<form method="post">
+						<label for="page-name">Page Name</label>
+						<input class="form-control" id="page-name" type="text" placeholder="Eg. Accommodations / Amenities / Area Guide etc.">
+
+						<label for="page-copy">Page Copy (text)</label>
+						<textarea class="form-control" id="page-copy" placeholder="Copy and paste all of you page copy here."></textarea>
+
+						<label for="page-images">Page Images</label>
+						<input class="" id="page-images" type="file" multiple>
+
+						<p><button id="add-page" class="btn btn-primary">Add another page</button></p>
+
+						<input id="data" type="hidden" name="data" value="">
+						<p><button id="submit" class="btn btn-lg btn-block btn-success">Finished</button></p>
+					</form>
+
+					<p><small>Please only provide content that will be publically accessible on the website.</small></p>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="/javascripts/scripts.js"></script>
+	</body>
+</html>

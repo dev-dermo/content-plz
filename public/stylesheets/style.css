@@ -1,0 +1,38 @@
+label,
+button.btn-primary {
+	margin-top: 25px;
+}
+
+.btn-lg {
+	margin-top: 100px;
+}
+
+.btn {
+	text-transform: uppercase;
+}
+
+.alert-success,
+.alert-danger {
+	display: none;
+}
+
+.alert-success ul {
+	padding: 5px 20px 0;
+}
+
+.well p {
+	white-space: pre-line;
+}
+
+.well h3 {
+	margin: 0;
+}
+
+.well ul {
+	padding: 5px 15px 0;
+	margin: 0;
+}
+
+.btn-group {
+	margin-bottom: 20px;
+}
